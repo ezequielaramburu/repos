@@ -86,6 +86,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="EditarAlumno.aspx" />
     <Content Include="EditarCurso.aspx" />
+    <Content Include="EliminarAlumno.aspx" />
+    <Content Include="EliminarCurso.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -162,6 +164,20 @@
     </Compile>
     <Compile Include="EditarCurso.aspx.designer.cs">
       <DependentUpon>EditarCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarAlumno.aspx.cs">
+      <DependentUpon>EliminarAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EliminarAlumno.aspx.designer.cs">
+      <DependentUpon>EliminarAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarCurso.aspx.cs">
+      <DependentUpon>EliminarCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EliminarCurso.aspx.designer.cs">
+      <DependentUpon>EliminarCurso.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VistaAlumno.aspx.cs">

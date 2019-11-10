@@ -15,7 +15,7 @@
                 <asp:TemplateField HeaderStyle-ForeColor="Black">
                     <ItemTemplate>
                         <asp:Button ID="BtnEditar" PostBackUrl='<%# Page.ResolveUrl("EditarCurso.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Curso" )%>' runat="server" Text="Editar" />
-                        <asp:Button ID="BtnEliminar" runat="server" Text="Eliminar" />
+                        <asp:Button ID="BtnEliminar" PostBackUrl='<%# Page.ResolveUrl("EliminarCurso.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Curso" )%>' runat="server" Text="Eliminar" />
                     </ItemTemplate>
                 </asp:TemplateField>                
             </Columns> 

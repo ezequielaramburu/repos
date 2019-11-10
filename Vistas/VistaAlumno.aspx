@@ -22,7 +22,7 @@
                 <asp:TemplateField HeaderStyle-ForeColor="Black">
                     <ItemTemplate>
                         <asp:Button ID="BtnEditar" PostBackUrl='<%# Page.ResolveUrl("EditarAlumno.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Alumno" )%>' runat="server" Text="Editar" />
-                        <asp:Button ID="BtnEliminar" runat="server" Text="Eliminar" />
+                        <asp:Button ID="BtnEliminar" PostBackUrl='<%# Page.ResolveUrl("EliminarAlumno.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Alumno" )%>' runat="server" Text="Eliminar" />
                     </ItemTemplate>
                 </asp:TemplateField>                
             </Columns>  
