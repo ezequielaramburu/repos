@@ -26,5 +26,9 @@ namespace Vistas
 
         }
 
+        protected void BtnAgregarCurso_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AgreGarCurso.aspx");
+        }
     }
 }

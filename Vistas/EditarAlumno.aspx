@@ -1,10 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditarAlumno.aspx.cs" Inherits="Vistas.EditarAlumno" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="EditarAlumno.aspx.cs" Inherits="Vistas.EditarAlumno" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server"> 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -17,9 +13,10 @@
     );
     </script>
 
-    <title></title>
-</head>
-<body>
+  </asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+ <br /><br /><br /><br />
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="LblNombre" runat="server" Text="Nombre: " Font-Bold="True"></asp:Label><asp:TextBox ID="TxtNombre" runat="server"></asp:TextBox>
@@ -78,5 +75,4 @@
     </form>
             <asp:Label ID="LblEstado" runat="server" ></asp:Label>
 
-</body>
-</html>
+ </asp:Content>

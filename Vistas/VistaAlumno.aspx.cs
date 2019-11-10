@@ -34,5 +34,10 @@ namespace Vistas
 
 
         }
+
+        protected void BtnAgregarAlumno_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AgregarAlumno.aspx");
+        }
     }
 }
