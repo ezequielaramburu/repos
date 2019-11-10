@@ -62,6 +62,9 @@ namespace Datos
             
         }
 
+
+
+
         public void ElimnarAlumno(int id)
         {
             using (TrabajoPracticoEntities db = new TrabajoPracticoEntities())
