@@ -10,10 +10,10 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br /><br /><br /><br />
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" class="form-group">
         <div>
             <asp:Label ID="LblAlumnos" runat="server" Text=""></asp:Label>
-            <asp:GridView ID="GridView1"  runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <asp:GridView ID="GridView1"  CssClass="table table-hover table-striped" GridLines="None"  runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>
                 <asp:TemplateField HeaderStyle-ForeColor="Black">
                     <ItemTemplate>

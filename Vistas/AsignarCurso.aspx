@@ -20,16 +20,17 @@
     <br />
     <br />
     <br />
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" class="form-group">
         <div>
 
             <asp:Label ID="LblCurso" runat="server" Text="Curso: " Font-Bold="True"></asp:Label>
-            <asp:DropDownList ID="DdlCurso" runat="server">
+            <asp:DropDownList ID="DdlCurso"  runat="server">
             </asp:DropDownList>
             <asp:RequiredFieldValidator ID="requeridoCurso" runat="server" ControlToValidate="DdlCurso" ErrorMessage="Debe indicar el curso al que asiste el alumno" Font-Italic="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
 
         </div>
         <p>
+            <br />
             <asp:Button ID="BtnAgregarCurso" runat="server" Text="Guardar" OnClick="BtnAsignarCurso_Click" BackColor="#669900" Font-Bold="True" />
         </p>
         <div>
