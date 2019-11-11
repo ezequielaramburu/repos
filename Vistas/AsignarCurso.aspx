@@ -21,26 +21,29 @@
     <br />
     <br />
     <form id="form1" runat="server" class="form-group">
-        <div>
+        <div class="form-group">
 
             <asp:Label ID="LblCurso" runat="server" Text="Curso: " Font-Bold="True"></asp:Label>
-            <asp:DropDownList ID="DdlCurso"  runat="server">
+            <asp:DropDownList class="form-text text-muted" ID="DdlCurso"  runat="server">
             </asp:DropDownList>
             <asp:RequiredFieldValidator ID="requeridoCurso" runat="server" ControlToValidate="DdlCurso" ErrorMessage="Debe indicar el curso al que asiste el alumno" Font-Italic="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
 
         </div>
         <p>
-            <br />
-            <asp:Button ID="BtnAgregarCurso" runat="server" Text="Guardar" OnClick="BtnAsignarCurso_Click" BackColor="#669900" Font-Bold="True" />
+            
+            <asp:Button ID="BtnAgregarCurso" runat="server" Text="Agregar curso" OnClick="BtnAsignarCurso_Click" class="btn-primary" />
         </p>
         <div>
-            <asp:GridView ID="GridViewCursos" runat="server">
+            <asp:GridView CssClass="table table-hover table-striped" GridLines="None" ID="GridViewCursos" runat="server">
                 <Columns>
-                    <asp:TemplateField HeaderStyle-ForeColor="Black">
-                        <ItemTemplate>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                </Columns>
+                 <asp:TemplateField >
+                    <ItemTemplate>
+                                              
+                        <asp:Button ID="BtnEliminar" class="btn btn-danger" PostBackUrl='<%# Page.ResolveUrl("DesAsignarAlumno.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Curso" )%>' runat="server" Text="Eliminar" />
+                                              
+                    </ItemTemplate>
+                </asp:TemplateField>
+                </Columns> 
             </asp:GridView>
         </div>
     </form>

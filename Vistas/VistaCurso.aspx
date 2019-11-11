@@ -9,7 +9,7 @@
             <br /><br /><br /><br />
             <asp:GridView ID="GridViewCursos" CssClass="table table-hover table-striped" GridLines="None" runat="server">
                  <Columns>
-                <asp:TemplateField HeaderStyle-ForeColor="Black">
+                <asp:TemplateField >
                     <ItemTemplate>
                         <asp:Button ID="BtnEditar" class="btn btn-warning" PostBackUrl='<%# Page.ResolveUrl("EditarCurso.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Curso" )%>' runat="server" Text="Editar" />
                         <asp:Button ID="BtnEliminar" class="btn btn-danger" PostBackUrl='<%# Page.ResolveUrl("EliminarCurso.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Curso" )%>' runat="server" Text="Eliminar" />

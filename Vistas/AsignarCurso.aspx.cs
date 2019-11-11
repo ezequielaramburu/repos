@@ -12,6 +12,7 @@ namespace Vistas
         protected void Page_Load(object sender, EventArgs e)
         {
             int id_alu = Convert.ToInt32(Request.Params["id"]);
+            Session["Alumno"] = id_alu;
             if (!Page.IsPostBack) { 
             CargarAlumno(id_alu);
             ObtenerCursos();

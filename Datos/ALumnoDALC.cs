@@ -69,7 +69,19 @@ namespace Datos
                 var alumno = db.Alumnos.FirstOrDefault(x => x.Id_Alumno == id);
                 var curso = db.Cursos.FirstOrDefault(x => x.Id_Curso == idcurso);
                 curso.Alumnos.Add(alumno);
-                //db.Alumnos.FirstOrDefault(x => x.Id_Alumno == id).Cursos.Add(curso);
+                db.SaveChanges();
+
+            }
+
+
+        }
+        public void EliminarCursoAlumno(int id, int idcurso)
+        {
+            using (TrabajoPracticoEntities db = new TrabajoPracticoEntities())
+            {
+                var alumno = db.Alumnos.FirstOrDefault(x => x.Id_Alumno == id);
+                var curso = db.Cursos.FirstOrDefault(x => x.Id_Curso == idcurso);
+                curso.Alumnos.Remove(alumno);
                 db.SaveChanges();
 
             }

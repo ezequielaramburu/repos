@@ -85,6 +85,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="AsignarCurso.aspx" />
+    <Content Include="DesAsignarAlumno.aspx" />
     <Content Include="EditarAlumno.aspx" />
     <Content Include="EditarCurso.aspx" />
     <Content Include="EliminarAlumno.aspx" />
@@ -159,6 +160,13 @@
     </Compile>
     <Compile Include="AsignarCurso.aspx.designer.cs">
       <DependentUpon>AsignarCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesAsignarAlumno.aspx.cs">
+      <DependentUpon>DesAsignarAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesAsignarAlumno.aspx.designer.cs">
+      <DependentUpon>DesAsignarAlumno.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditarAlumno.aspx.cs">
       <DependentUpon>EditarAlumno.aspx</DependentUpon>

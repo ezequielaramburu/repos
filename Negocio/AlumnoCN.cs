@@ -26,6 +26,14 @@ namespace Negocio
 
         }
 
+        public static void EliminarCursoAlumno(int id, int idcurso)
+        {
+            ALumnoDALC alu = new ALumnoDALC();
+            alu.EliminarCursoAlumno(id, idcurso);
+
+
+        }
+
         public static void AgregarAlumno(Alumno alum)
         {
             ALumnoDALC alu = new ALumnoDALC();
