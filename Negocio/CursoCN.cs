@@ -49,5 +49,11 @@ namespace Negocio
 
         }
 
+        public static List<Curso> GetCursosByAlumno(int id_alu)
+        {
+            CursoDALC cur = new CursoDALC();
+            return cur.GetCursosByAlumno(id_alu);
+
+        }
     }
 }

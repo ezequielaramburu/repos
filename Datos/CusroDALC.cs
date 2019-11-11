@@ -49,6 +49,17 @@ namespace Datos
             }
 
         }
+
+        public List<Curso> GetCursosByAlumno(int id_alu)
+        {
+            using (TrabajoPracticoEntities db = new TrabajoPracticoEntities())
+            {
+                return db.Cursos.Where(x => x.Alumnos.Any(a => a.Id_Alumno == id_alu)).ToList();
+
+            }
+
+        }
+
         public void ElimnaCurso(int id)
         {
             using (TrabajoPracticoEntities db = new TrabajoPracticoEntities())

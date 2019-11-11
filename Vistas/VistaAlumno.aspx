@@ -19,6 +19,7 @@
                     <ItemTemplate>
                         <asp:Button ID="BtnEditar" PostBackUrl='<%# Page.ResolveUrl("EditarAlumno.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Alumno" )%>' runat="server" Text="Editar" />
                         <asp:Button ID="BtnEliminar" PostBackUrl='<%# Page.ResolveUrl("EliminarAlumno.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Alumno" )%>' runat="server" Text="Eliminar" />
+                        <asp:Button ID="Button1" PostBackUrl='<%# Page.ResolveUrl("AsignarCurso.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Alumno" )%>' runat="server" Text="Curso" />
                     </ItemTemplate>
                 </asp:TemplateField>                
             </Columns>  

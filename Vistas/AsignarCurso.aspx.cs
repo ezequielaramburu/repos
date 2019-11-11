@@ -32,7 +32,6 @@ namespace Vistas
                 LblEstado.ForeColor = Color.Red;
                 form1.Visible = false;
             }
-            //DdlTurno.SelectedItem = Alumno.Turno;
         }
 
         protected void BtnAsignarCurso_Click(object sender, EventArgs e)
@@ -58,7 +57,7 @@ namespace Vistas
 
         private void ObtenerCursosPorAlumno(int id_alu)
         {
-            List<Curso> cursos = AlumnoCursoCN.GetCursosByAlumno(id_alu);
+            List<Curso> cursos = CursoCN.GetCursosByAlumno(id_alu);
             GridViewCursos.DataSource = cursos;
             GridViewCursos.DataBind();
 
