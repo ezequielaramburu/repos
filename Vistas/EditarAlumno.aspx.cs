@@ -6,7 +6,7 @@ using Negocio;
 
 namespace Vistas
 {
-    public partial class EditarAlumno : System.Web.UI.Page
+    public partial class EditarAlumno : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
