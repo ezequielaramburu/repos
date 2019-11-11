@@ -17,14 +17,29 @@
             <Columns>
                 <asp:TemplateField HeaderStyle-ForeColor="Black">
                     <ItemTemplate>
-                        <asp:Button ID="BtnEditar" PostBackUrl='<%# Page.ResolveUrl("EditarAlumno.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Alumno" )%>' runat="server" Text="Editar" />
-                        <asp:Button ID="BtnEliminar" PostBackUrl='<%# Page.ResolveUrl("EliminarAlumno.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Alumno" )%>' runat="server" Text="Eliminar" />
-                        <asp:Button ID="Button1" PostBackUrl='<%# Page.ResolveUrl("AsignarCurso.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Alumno" )%>' runat="server" Text="Curso" />
+                        <asp:Button ID="BtnEditar" class="btn btn-warning" PostBackUrl='<%# Page.ResolveUrl("EditarAlumno.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Alumno" )%>' runat="server" Text="Editar" />
+                                              
                     </ItemTemplate>
-                </asp:TemplateField>                
+                </asp:TemplateField> 
+
+                <asp:TemplateField HeaderStyle-ForeColor="Black">
+                    <ItemTemplate>
+                                              
+                        <asp:Button ID="BtnEliminar" class="btn btn-danger" PostBackUrl='<%# Page.ResolveUrl("EliminarAlumno.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Alumno" )%>' runat="server" Text="Eliminar" />
+                                              
+                    </ItemTemplate>
+                </asp:TemplateField>
+
+                <asp:TemplateField HeaderStyle-ForeColor="Black">
+                    <ItemTemplate>
+                         <asp:Button ID="Button1"  class="btn btn-success" PostBackUrl='<%# Page.ResolveUrl("AsignarCurso.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Alumno" )%>' runat="server" Text="Curso" />
+
+                          </ItemTemplate>
+                </asp:TemplateField>
+
             </Columns>  
-            </asp:GridView>
-            <asp:Button ID="BtnAgregarAlumno" runat="server" Text="Agregar Alumno" OnClick="BtnAgregarAlumno_Click" BackColor="#669900" Font-Bold="True" />
+            </asp:GridView><br />
+            <asp:Button ID="BtnAgregarAlumno" runat="server" Text="Agregar Alumno" class="btn btn-primary" OnClick="BtnAgregarAlumno_Click" />
         </div>
     </form>
 
