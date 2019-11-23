@@ -18,6 +18,17 @@ namespace Datos
             }
         }
 
+        public List<Alumno> BuscarAlumnosApellido(string apellido)
+        {
+            using (TrabajoPracticoEntities db = new TrabajoPracticoEntities())
+            {
+                var alumnos = db.Alumnos.Where(x => x.Apellido == apellido).ToList();
+               
+                return alumnos;
+
+            }
+        }
+
         public Alumno EncontrarAlumno(int id)
         {
             using (TrabajoPracticoEntities db = new TrabajoPracticoEntities())
@@ -34,6 +45,7 @@ namespace Datos
             using (TrabajoPracticoEntities db = new TrabajoPracticoEntities())
             {
                 var alumno = db.Alumnos.FirstOrDefault(x => x.DNI == DNI);
+                
                 return alumno;
 
             }

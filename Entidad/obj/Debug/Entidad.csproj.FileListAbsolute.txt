@@ -3,3 +3,9 @@ C:\Users\EZEQUIEL\source\repos\Entidad\bin\Debug\Entidad.pdb
 C:\Users\EZEQUIEL\source\repos\Entidad\obj\Debug\Entidad.dll
 C:\Users\EZEQUIEL\source\repos\Entidad\obj\Debug\Entidad.pdb
 C:\Users\EZEQUIEL\source\repos\Entidad\obj\Debug\Entidad.csprojAssemblyReference.cache
+C:\Users\Ezequiel\Documents\TPPA2\repos\Entidad\bin\Debug\Entidad.dll
+C:\Users\Ezequiel\Documents\TPPA2\repos\Entidad\bin\Debug\Entidad.pdb
+C:\Users\Ezequiel\Documents\TPPA2\repos\Entidad\obj\Debug\Entidad.csprojAssemblyReference.cache
+C:\Users\Ezequiel\Documents\TPPA2\repos\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\Ezequiel\Documents\TPPA2\repos\Entidad\obj\Debug\Entidad.dll
+C:\Users\Ezequiel\Documents\TPPA2\repos\Entidad\obj\Debug\Entidad.pdb

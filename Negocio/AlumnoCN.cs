@@ -26,6 +26,13 @@ namespace Negocio
 
         }
 
+        public List<Alumno> BuscarAlumnosApellido(string apellido)
+        {
+
+            ALumnoDALC alu = new ALumnoDALC();
+            return alu.BuscarAlumnosApellido(apellido);
+        }
+
         public static void EliminarCursoAlumno(int id, int idcurso)
         {
             ALumnoDALC alu = new ALumnoDALC();
