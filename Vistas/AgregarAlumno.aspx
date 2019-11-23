@@ -1,9 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="AgregarAlumno.aspx.cs" Inherits="Vistas.AgregarAlumno" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+ 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
