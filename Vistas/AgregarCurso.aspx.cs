@@ -19,15 +19,25 @@ namespace Vistas
 
         protected void BtnAgregarCurso_Click(object sender, EventArgs e)
         {
-            Curso cur = new Curso
+            try
             {
-                Aula = Convert.ToInt32(TxtAula.Text),
-                Nombre = TxtNombre.Text,
-                
-            };
-            CursoCN.AgregarCurso(cur);
-            LblEstado.Text = "Curso agregado con éxito";
-            LblEstado.ForeColor = Color.Green;
+                Curso cur = new Curso
+                {
+                    Aula = Convert.ToInt32(TxtAula.Text),
+                    Nombre = TxtNombre.Text,
+
+                };
+                CursoCN.AgregarCurso(cur);
+                LblEstado.Text = "Curso agregado con éxito";
+                LblEstado.ForeColor = Color.Green;
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", " alert('Curso agregado con exito'); window.location = 'VistaCurso.aspx';", true);
+            }
+            catch (Exception)
+            {
+
+                LblEstado.Text = "Error a agergar curso, por favor verifique los campos";
+            }
+            
         }
     }
 }

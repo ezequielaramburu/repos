@@ -36,6 +36,8 @@
         <div>
             <asp:GridView CssClass="table table-hover table-striped" GridLines="None" ID="GridViewCursos" runat="server">
                 <Columns>
+                    <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
+                    <asp:BoundField DataField="Aula" HeaderText="Aula" SortExpression="Aula" />
                  <asp:TemplateField >
                     <ItemTemplate>
                                               

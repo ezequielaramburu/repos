@@ -48,6 +48,13 @@ namespace Negocio
 
         }
 
+        public static Alumno EncontrarAlumnoPorDNI(int id)
+        {
+            ALumnoDALC alu = new ALumnoDALC();
+            return alu.EncontrarAlumnoPorDNI(id);
+
+        }
+
         public static void EliminarAlumno(int id)
         {
             ALumnoDALC alu = new ALumnoDALC();

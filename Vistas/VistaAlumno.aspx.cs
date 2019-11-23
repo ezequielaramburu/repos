@@ -24,10 +24,14 @@ namespace Vistas
         {
             List<Alumno> alumnos = AlumnoCN.GetAlumnos();
             GridView1.DataSource = alumnos;
+            GridView1.AutoGenerateColumns = false;
             GridView1.DataBind();
            
         }
-
+        void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            e.Row.Cells[4].Visible = false;
+        }
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 

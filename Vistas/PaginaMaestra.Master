@@ -1,5 +1,10 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="Vistas.PaginaMaestra" %>
 
+<%@ Register Src="~/PiePagina.ascx" TagPrefix="uc1" TagName="PiePagina" %>
+
+
+
+
 <!DOCTYPE html>
 
 <html>
@@ -16,6 +21,11 @@
         -ms-user-select: none;
         user-select: none;
       }
+      .footer{position:fixed;
+        position: absolute;
+        bottom: 0;
+        width: 100%;}
+
 
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
@@ -33,18 +43,15 @@
     <body>    
 
        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+         
 
           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="VistaAlumno.aspx">VistaAlumno.aspx</a>
+                    <a class="nav-link" href="VistaAlumno.aspx">Alumnos</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link"  href="VistaCurso.aspx">VistaCurso.aspx</a>
+                      <a class="nav-link"  href="VistaCurso.aspx">Cursos</a>
                  </li>
                 
               </ul>
@@ -59,7 +66,8 @@
             </asp:ContentPlaceHolder>
         
         </div>
+            <br /> <br /> <br />
         </main><!-- /.container -->
-
+        <uc1:PiePagina runat="server" id="PiePagina" />
 </body>
 </html>

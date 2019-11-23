@@ -60,6 +60,7 @@ namespace Vistas
         {
             List<Curso> cursos = CursoCN.GetCursosByAlumno(id_alu);
             GridViewCursos.DataSource = cursos;
+            GridViewCursos.AutoGenerateColumns = false;
             GridViewCursos.DataBind();
 
         }

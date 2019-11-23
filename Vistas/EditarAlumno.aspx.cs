@@ -18,15 +18,17 @@ namespace Vistas
         private void CargarAlumno(int id)
         {
             var Alumno = AlumnoCN.ObtenerUnAlumno(id);
-            if(Alumno!= null)
+            DateTime ingreso = Alumno.Fecha_ingreso.Value;
+            DateTime nacimiento = Alumno.Fecha_Nac.Value;
+            if (Alumno!= null)
             {
                 TxtNombre.Text = Alumno.Nombre;
                 TxtApellido.Text = Alumno.Apellido;
                 TxtDni.Text = Alumno.DNI.ToString();
                 TxtDireccion.Text = Alumno.Direccion;
-                TxtIng.Text = Alumno.Fecha_ingreso.ToString();
+                TxtIng.Text = ingreso.ToShortDateString();
                 TxtMatricula.Text = Alumno.Matricula.ToString();
-                TxtNac.Text = Alumno.Fecha_Nac.ToString();
+                TxtNac.Text = nacimiento.ToShortDateString();
                 TxtTel.Text = Alumno.Telefono;
                 DdlTurno.SelectedValue = Alumno.Turno;
             }
@@ -58,8 +60,8 @@ namespace Vistas
 
                 };
                 AlumnoCN.EditarAlumno(alu);
-                LblEstado.Text = "Alumno editado con éxito";
-                LblEstado.ForeColor = Color.Green;
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", " alert('Alumno Editado con exito'); window.location = 'VistaAlumno.aspx';", true);
+              
 
             }
             catch (Exception)

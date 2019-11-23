@@ -49,9 +49,11 @@ namespace Vistas
                     Id_Curso = Convert.ToInt32(Request.Params["id"])
                 };
                 CursoCN.EditarCurso(cur);
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", " alert('Curso editado con exito'); window.location = 'VistaCurso.aspx';", true);
                 LblEstado.Text = "Curso editado con éxito";
                 LblEstado.ForeColor = Color.Green;
-           }
+                Response.Redirect("VistaCurso.aspx");
+            }
             catch
             {
                 LblEstado.Text = "Error al editar curso";

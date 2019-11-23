@@ -6,7 +6,7 @@
         <br /><br /><br /><br />
         <div>
             <asp:Label ID="Label1" runat="server" Text="Esta seguro que desea eliminar el Alumno?"></asp:Label>
-        </div>
-        <asp:Button ID="BtnEliminarAlumno" runat="server" Text="Button" OnClick="BtnEliminarAlumno_Click" />
+        </div><br />
+        <asp:Button ID="BtnEliminarAlumno" runat="server" Text="Eliminar" CssClass="btn-primary" OnClick="BtnEliminarAlumno_Click" />
     </form>
 </asp:Content>

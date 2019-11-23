@@ -11,3 +11,17 @@ C:\Users\EZEQUIEL\source\repos\Datos\obj\Debug\Datos.csprojAssemblyReference.cac
 C:\Users\EZEQUIEL\source\repos\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\EZEQUIEL\source\repos\Datos\obj\Debug\Datos.dll
 C:\Users\EZEQUIEL\source\repos\Datos\obj\Debug\Datos.pdb
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\bin\Debug\Datos.dll.config
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\bin\Debug\Datos.dll
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\bin\Debug\Datos.pdb
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\bin\Debug\Entidad.dll
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\bin\Debug\EntityFramework.dll
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\bin\Debug\Entidad.pdb
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\bin\Debug\EntityFramework.xml
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\obj\Debug\Datos.dll
+C:\Users\Ezequiel\Documents\TPPA2\repos\Datos\obj\Debug\Datos.pdb

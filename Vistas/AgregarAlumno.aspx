@@ -11,6 +11,7 @@
     <form id="form1" runat="server" class="form-group">
         <br /><br /><br /><br />
         <div class="form-group">
+            <asp:Label ID="LblEstado" runat="server" ></asp:Label><br />
 
             <asp:Label ID="LblNombre" runat="server" Text="Nombre: " Font-Bold="True"></asp:Label><asp:TextBox class="form-text text-muted" ID="TxtNombre" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="requeridoNombre" runat="server" ControlToValidate="TxtNombre" ErrorMessage="Debe ingresar el nombre del alumno" Font-Italic="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
@@ -67,7 +68,7 @@
         <asp:Button ID="BtnAgregarAlumno"  runat="server" Text="Guardar" OnClick="BtnAgregarAlumno_Click"  class="btn btn-primary" />
         <br />
         <br />
-        <asp:Label ID="LblEstado" runat="server" ></asp:Label>
+        
         
     </form>
 </asp:Content>

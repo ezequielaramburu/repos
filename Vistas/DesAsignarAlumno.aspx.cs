@@ -26,7 +26,8 @@ namespace Vistas
 
                 AlumnoCN.EliminarCursoAlumno(alumnoId, id_curso);
 
-                Response.Redirect("VistaAlumno.aspx");
+                Response.Redirect("AsignarCurso.aspx?id=" + alumnoId);
+
             }
             catch (Exception)
             {

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Entidad;
+using Negocio;
 
 namespace Vistas
 {
@@ -11,11 +13,26 @@ namespace Vistas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            int Id_Curso = Convert.ToInt32(Request.Params["id"]);
         }
 
-        protected void BtnEliminarAlumno_Click(object sender, EventArgs e)
+        protected void BtnEliminarCurso_Click(object sender, EventArgs e)
         {
+            try
+            {
+                CursoCN.EliminarCurso(Convert.ToInt32(Request.Params["id"]));
+                Label1.Text = "Curso Eliminado con exito";
+                Response.Redirect("VistaCurso.aspx");
+
+            }
+            catch (Exception)
+            {
+
+                Label1.Text = "No se puede eliminar un curso que posea Alumnos asignados";
+            }
+
+       
+            
 
         }
     }

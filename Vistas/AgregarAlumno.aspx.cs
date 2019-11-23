@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Drawing;
+using System.Threading;
+using System.Web.UI;
 using Entidad;
 using Negocio;
 
@@ -31,8 +33,8 @@ namespace Vistas
                 
             };
             AlumnoCN.AgregarAlumno(alu);
-            LblEstado.Text = "Alumno agregado con éxito";
-            LblEstado.ForeColor= Color.Green;
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", " alert('Alumno agregado con exito'); window.location = 'VistaAlumno.aspx';", true);
+                
 
             }
             catch (Exception)

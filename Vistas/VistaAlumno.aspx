@@ -11,10 +11,19 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br /><br /><br /><br />
     <form id="form1" runat="server" class="form-group">
-        <div>
+        <div >
             <asp:Label ID="LblAlumnos" runat="server" Text=""></asp:Label>
-            <asp:GridView ID="GridView1"  CssClass="table table-hover table-striped" GridLines="None"  runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <asp:GridView ID="GridView1"  CssClass="table table-hover " GridLines="None"  runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>
+                <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
+                <asp:BoundField DataField="Apellido" HeaderText="Apellido" SortExpression="Apellido" />
+                <asp:BoundField DataField="Direccion" HeaderText="Direccion" SortExpression="Direccion" />
+                <asp:BoundField DataField="Matricula" HeaderText="Matricula" SortExpression="Matricula" />
+                <asp:BoundField DataField="Telefono" HeaderText="Telefono" SortExpression="Telefono" />
+                <asp:BoundField DataField="Turno" HeaderText="Turno" SortExpression="Turno" />
+                <asp:BoundField DataField="Fecha_Nac" DataFormatString="{0:dd-MM-yyyy}" HeaderText="Fecha de Nacimiento" SortExpression="Fecha_Nac" />
+                <asp:BoundField DataField="Fecha_ingreso" DataFormatString="{0:dd-MM-yyyy}" HeaderText="Fecha de ingreso" SortExpression="Fecha_ingreso" />
+
                 <asp:TemplateField HeaderStyle-ForeColor="Black">
                     <ItemTemplate>
                         <asp:Button ID="BtnEditar" class="btn btn-warning" PostBackUrl='<%# Page.ResolveUrl("EditarAlumno.aspx?id=") + DataBinder.Eval(Container.DataItem, "Id_Alumno" )%>' runat="server" Text="Editar" />

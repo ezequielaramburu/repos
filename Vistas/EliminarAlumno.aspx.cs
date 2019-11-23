@@ -22,11 +22,12 @@ namespace Vistas
             {
                 AlumnoCN.EliminarAlumno(Convert.ToInt32(Request.Params["id"]));
                 Label1.Text = "Alumno Eliminado con exito";
+                Response.Redirect("VistaAlumno.aspx");
             }
             catch (Exception)
             {
 
-                Label1.Text = "ERROR No se pudo eliminar Alumno";
+                Label1.Text = "No se puede ELiminar un alumno que tenga cursos asignados";
             }
             
            

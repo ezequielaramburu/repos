@@ -5,8 +5,12 @@
     <form id="form1" runat="server">
         <br /><br /><br /><br />
         <div class="form-group">
-            <asp:Label ID="LblNombre"  runat="server" Text="Nombre del curso: "></asp:Label><asp:TextBox class="form-text text-muted" ID="TxtNombre" runat="server"></asp:TextBox><br />
-            <asp:Label ID="LblAula" runat="server" Text="Aula: "></asp:Label><asp:TextBox ID="TxtAula" class="form-text text-muted" runat="server"></asp:TextBox><br />
+            <asp:Label ID="LblNombre"  runat="server" Text="Nombre del curso: "></asp:Label><asp:TextBox class="form-text text-muted" ID="TxtNombre" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TxtNombre" ErrorMessage="Campor requerido"></asp:RequiredFieldValidator>
+            <br />
+            <asp:Label ID="LblAula" runat="server" Text="Aula: "></asp:Label><asp:TextBox ID="TxtAula" class="form-text text-muted" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TxtAula" ErrorMessage="Aula requerida"></asp:RequiredFieldValidator>
+            <br />
             
         </div>
         <asp:Button ID="BtnAgregarCurso"  class="btn-primary" runat="server" Text="Agregar" OnClick="BtnAgregarCurso_Click" />

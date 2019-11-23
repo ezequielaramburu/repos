@@ -10,16 +10,7 @@
 namespace Vistas {
     
     
-    public partial class AgregarCurso {
-        
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+    public partial class AlumnoDni {
         
         /// <summary>
         /// LblNombre control.
@@ -31,58 +22,49 @@ namespace Vistas {
         protected global::System.Web.UI.WebControls.Label LblNombre;
         
         /// <summary>
-        /// TxtNombre control.
+        /// nombre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNombre;
+        protected global::System.Web.UI.WebControls.Label nombre;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// LblApellido control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.Label LblApellido;
         
         /// <summary>
-        /// LblAula control.
+        /// apellido control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblAula;
+        protected global::System.Web.UI.WebControls.Label apellido;
         
         /// <summary>
-        /// TxtAula control.
+        /// LblDni control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtAula;
+        protected global::System.Web.UI.WebControls.Label LblDni;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// Dni control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
-        
-        /// <summary>
-        /// BtnAgregarCurso control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAgregarCurso;
+        protected global::System.Web.UI.WebControls.Label Dni;
         
         /// <summary>
         /// LblEstado control.
